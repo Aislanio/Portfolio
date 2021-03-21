@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Syne Mono', monospace;
+}
+html,body{
+	width: 100%;
+	height: 100vh;
+}
+header{
+	width: 100%;
+	height: 82px;
+	display: flex;
+	align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+
+}
+header ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+
+}
+header ul li{
+	margin: 12px;
+}
+ a{
+	color: black;
+	text-decoration: none;
+}
+header ul li a{
+	font-size: 1.5rem;
+
+}
+section{
+	width: 100%;
+	height: 661px;
+	background: url(assets/unsplash-7jQh3EiS8Bs.jpg) no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+ 	align-items: center;
+ 	padding-top: 200px;
+ 	background-attachment: fixed;
+ 	text-align: center;
+ 	white-space: nowrap;
+}
+
+section h1{
+	font-size: 7.5rem;
+	position: relative;
+      width: 0px;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+
+      text-align: center;
+      overflow: hidden;
+	animation: typewriter 10s steps(9) 700ms infinite,
+      blinkTextCursor 500ms steps(9) infinite normal;
+}
+section p, section a{
+	font-size: 2.7rem;
+	
+}
+article {
+	width: 100%;
+	height: auto;
+}
+#sobre_mim{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/*background: url(assets/des.jpg) no-repeat ;*/
+}
+#sobre_mim img{
+	width: 100%;
+	max-width: 120px;
+}
+#sobre_mim #sobre_mim_text{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#sobre_mim p {
+	    font-size: 1.7rem;
+}
+#icons{
+	display: flex;
+	margin: 25px;
+}
+#icons a {
+	margin:14px;
+}
+article{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#Skils{
+	margin-top: 20px;
+	flex-direction: column;
+	
+}
+#Skils ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+#Skils ul li {
+	margin: 13px;
+}
+#Skils ul li img{
+	width: 100%;
+	max-width: 120px;
+	border-radius: 10px;
+}
+#Projetos{
+	margin-top: 20px;
+	padding: 25px;
+	flex-direction: column;
+}
+#Projetos #cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+  margin: 20px;
+  width:100%;
+  height: auto;
+
+}
+#Projetos #cards .card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.card img{
+	width: 100%;
+	max-width: 325px;
+	filter: drop-shadow(2px 4px 6px black);
+
+}
+.card div{
+	position: absolute;
+	color: #f7e018;
+	font-size:1.3rem;
+	display: none;
+
+}
+.card div a{
+	background: #FF6842;
+	text-align: center;
+	border-radius: 9px;
+
+ }
+.card:hover img{
+	filter: contrast(0.5);
+	transition: filter 5s;
+}
+.card:hover div{
+	animation: text 5s;
+	display: block;
+}
+/*Animatin*/
+@keyframes typewriter {
+      0% {
+            width: 0%;
+      }
+      10% {
+            width: 0%;
+      }
+      25% {
+            width: 57%;
+      }
+      75% {
+            width: 57%;
+      }
+      90% {
+            width: 0%;
+      }
+      100% {
+            width: 0px;
+      }
+}
+
+@keyframes text{
+	from{
+		transform: translateY(66px);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: black;
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+@media (max-width: 425px){
+	h1{
+		white-space: normal;
+	}
+}
