@@ -209,6 +209,9 @@ svg{
 .darkmode #icons svg{
 	color: white;
 }
+.darkmode .cards .card h3{
+	color: white;
+}
 /*.darkmode svg{
 	color: white;
 }*/
