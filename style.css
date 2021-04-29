@@ -93,6 +93,7 @@ article {
 }
 #sobre_mim p {
 	    font-size: 1.7rem;
+	    text-align: center;
 }
 #icons{
 	display: flex;
@@ -197,10 +198,20 @@ svg{
 
 .darkmode{
 	color: white;
+	background: black;
 }
-.darkmode svg{
+.darkmode ul li a{
 	color: white;
 }
+.darkmode label{
+	color: white;
+}
+.darkmode #icons svg{
+	color: white;
+}
+/*.darkmode svg{
+	color: white;
+}*/
 /*Animatin*/
 @keyframes typewriter {
       0% {
